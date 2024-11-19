@@ -1,0 +1,210 @@
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.kanbancontrols {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .kanbanboard {
+    width: max-content;
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(244,246,250);
+  }
+  
+  .kanbancolumn {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+  }
+  .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .img1{
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .kanbancard {
+    width: 20rem;
+    height: 6rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardheader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    color: grey;
+    font-weight: 400;
+  }
+  
+  .useravatar {
+    width: 25px;
+    height: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-transform: uppercase;
+  }
+  .footerpriority{
+    border: 0.4px solid rgb(247, 240, 240);
+    padding: 1%;
+  }
+  .cardbody {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  .cardtitle {
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+  }
+  
+  .card_title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  
+  .cardcheckbox {
+    margin: 0;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .cardfooter {
+    display: flex;
+    gap: 3%;
+    width: 100%;
+    font-size: 12px;
+    color: #555;
+  }
+  .statusnum{
+    color: grey;
+  }
+  .priority-tag,
+  .featuretag {
+    padding: 0.2rem 0.1rem;
+    font-size: 12px;
+    margin-left: 1%;
+  }
+  
+  .priority-tag {
+    background-color: #ffdfdf;
+  }
+
+  .featuretagcont {
+    width: 7rem;
+    border: 0.4px solid rgb(247, 240, 240);
+    background-color: transparent;
+    color: grey;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .circle {
+    margin-left: 3%;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%; 
+  }
+  
+
+  .display {
+    margin-left: 1.3%;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .sort-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .down-arrow {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .display:hover .down-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown part--------------------------- */
+  .dropdownbox {
+    position: absolute;
+    top: 45px; 
+    left: 0;
+    z-index: 1000;
+    margin-top: 1%;
+    margin-left: 1.9%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(250,250,252);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+  }
+  
+  .dropdownitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dropdownitem select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdownitem img {
+    width: 10px;
+    height: 10px;
+  }
+  
